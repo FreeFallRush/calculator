@@ -42,6 +42,29 @@ h1 {
 
 .display {
   grid-column: 1 / -1;
+  display: 2px dotted rgb(0, 0, 0);
+  max-height: 3000px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+  background-color: rgb(244, 244, 171);
+  box-shadow: 5px 5px 5px rgb(84, 85, 85) inset;
+}
+
+.display #previous {
+  color: rgb(176, 18, 249, 0.7);
+  font-size: 1.5rem;
+  text-shadow: 0.5px 0.5px 0.5px rgb(4, 0, 2);
+}
+
+.display #current {
+  color: rgb(0, 201, 246);
+  font-size: 2rem;
+  text-shadow: 1px 1px 1px rgb(4, 0, 2);
 }
 
 #equals {
