@@ -109,7 +109,7 @@ button.operator {
   background: rgb(122, 202, 198);
 }
 
-@media all and (max-width: 768px) {
+/* @media all and (max-width: 768px) {
   .calculator {
     margin-top: 15px;
     position: absolute;
@@ -128,4 +128,4 @@ button.operator {
     background-color: rgb(244, 244, 171);
     box-shadow: 5px 5px 5px rgb(84, 85, 85) inset;
   }
-}
+} */
