@@ -108,3 +108,24 @@ button.operator {
     0 0 1em rgba(148, 187, 233, 1), 0 0 0.2em blue;
   background: rgb(122, 202, 198);
 }
+
+@media all and (max-width: 768px) {
+  .calculator {
+    margin-top: 15px;
+    position: absolute;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(4, 70px);
+    grid-template-rows: minmax(70px, auto) repeat(5, 70px);
+    box-shadow: 20px 20px 40px #bebebe;
+  }
+
+  .display {
+    padding: 5px;
+    word-wrap: break-word;
+    word-break: break-all;
+    background-color: rgb(244, 244, 171);
+    box-shadow: 5px 5px 5px rgb(84, 85, 85) inset;
+  }
+}
