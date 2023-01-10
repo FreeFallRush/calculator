@@ -6,7 +6,7 @@ let displayValue = 0;
 
 const numbers = document.querySelectorAll(".number");
 const operators = document.querySelectorAll(".operator");
-const equals = document.getElementById("clear");
+const equal = document.getElementById("equals");
 const decimalPoint = document.getElementById("decimal-point");
 const clearAll = document.getElementById("clear");
 const deleteBtn = document.getElementById("delete");
