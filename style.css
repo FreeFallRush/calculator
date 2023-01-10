@@ -55,12 +55,6 @@ h1 {
   box-shadow: 5px 5px 5px rgb(84, 85, 85) inset;
 }
 
-.display #previous {
-  color: rgb(176, 18, 249, 0.7);
-  font-size: 1.5rem;
-  text-shadow: 0.5px 0.5px 0.5px rgb(4, 0, 2);
-}
-
 .display #current {
   color: rgb(0, 201, 246);
   font-size: 2rem;
