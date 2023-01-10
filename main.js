@@ -87,3 +87,18 @@ function multiply(a, b) {
   secondValue = "";
   operation = "";
 }
+
+function divide(a, b) {
+  if (Number(b) === 0) {
+    let outcome = `That's a NO NO!`;
+    currentDisplay.textContent = outcome;
+    result = outcome;
+  } else {
+    let outcome = roundNum(Number(a) / Number(b));
+    currentDisplay.textContent = outcome;
+    result = outcome;
+    firstValue = "";
+    secondValue = "";
+    operation = "";
+  }
+}
