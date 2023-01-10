@@ -78,3 +78,12 @@ function subtract(a, b) {
   secondValue = "";
   operation = "";
 }
+
+function multiply(a, b) {
+  let outcome = roundNum(Number(a) * Number(b));
+  currentDisplay.textContent = outcome;
+  result = outcome;
+  firstValue = "";
+  secondValue = "";
+  operation = "";
+}
