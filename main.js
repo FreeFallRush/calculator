@@ -25,3 +25,32 @@ operators.forEach((btn) => {
     manageOperators(e.target.textContent);
   });
 });
+
+//
+function manageNumbers(num) {
+  if (result && operation === "") {
+    return false;
+  } else if (operation === "" && firstValue === "0") {
+    firstValue = num;
+    currentDisplay.textContent = firstValue;
+  } else if (operation === "" && firstValue.toString().length < 9) {
+    firstValue += num;
+    currentDisplay.textContent = firstValue;
+
+    if (firstValue.toString().length >= 9) {
+      currentDisplay.textContent = `Number too long!`;
+    }
+  }
+
+  if ((secondValue === "" || secondValue === "0") && operation) {
+    secondValue = num;
+    currentDisplay.textContent = secondValue;
+  } else if (secondValue && secondValue.toString().length < 9) {
+    secondValue += num;
+    currentDisplay.textContent = secondValue;
+
+    if (secondValue.toString().length >= 9) {
+      currentDisplay.textContent = `Number too long!`;
+    }
+  }
+}
