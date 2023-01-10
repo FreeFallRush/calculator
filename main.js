@@ -102,3 +102,20 @@ function divide(a, b) {
     operation = "";
   }
 }
+
+function calculate(a, operator, b) {
+  if (operator === "+") {
+    add(a, b);
+  } else if (operator === "-") {
+    subtract(a, b);
+  } else if (operator === "x") {
+    multiply(a, b);
+  } else if (operator === "÷") {
+    if (b === "0") {
+      result = `That's a NO NO!`;
+      currentDisplay.textContent = `That's a NO NO!`;
+    } else {
+      divide(a, b);
+    }
+  }
+}
