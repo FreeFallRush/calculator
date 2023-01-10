@@ -28,6 +28,7 @@ operators.forEach((btn) => {
 
 equal.addEventListener("click", manageEqual);
 clearAll.addEventListener("click", clear);
+decimalPoint.addEventListener("click", addDecimal);
 
 //
 function manageNumbers(num) {
@@ -106,6 +107,29 @@ function clear() {
   operation = "";
   result = "";
   currentDisplay.textContent = displayValue;
+}
+
+function addDecimal() {
+  if (firstValue === "" && result === "") {
+    firstValue = "0.";
+    currentDisplay.textContent = firstValue;
+  } else if (firstValue && operation === "") {
+    if (!firstValue.includes(".")) {
+      firstValue += ".";
+      currentDisplay.textContent = firstValue;
+    }
+  } else if (firstValue && operation && secondValue === "") {
+    secondValue = "0.";
+    currentDisplay.textContent = secondValue;
+  } else if (secondValue) {
+    if (!secondValue.includes(".")) {
+      secondValue += ".";
+      currentDisplay.textContent = secondValue;
+    }
+  } else if (result && operation && secondValue === "") {
+    secondValue = "0.";
+    currentDisplay.textContent = secondValue;
+  }
 }
 
 //rounding number to 3 decimals
