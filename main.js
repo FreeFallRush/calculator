@@ -69,3 +69,12 @@ function add(a, b) {
   secondValue = "";
   operation = "";
 }
+
+function subtract(a, b) {
+  let outcome = roundNum(Number(a) - Number(b));
+  currentDisplay.textContent = outcome;
+  result = outcome;
+  firstValue = "";
+  secondValue = "";
+  operation = "";
+}
