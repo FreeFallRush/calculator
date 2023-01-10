@@ -54,3 +54,8 @@ function manageNumbers(num) {
     }
   }
 }
+
+//rounding number to 3 decimals
+function roundNum(calculation) {
+  return Math.round(calculation * 1000) / 1000;
+}
