@@ -59,3 +59,13 @@ function manageNumbers(num) {
 function roundNum(calculation) {
   return Math.round(calculation * 1000) / 1000;
 }
+
+//calculations
+function add(a, b) {
+  let outcome = roundNum(Number(a) + Number(b));
+  currentDisplay.textContent = outcome;
+  result = outcome;
+  firstValue = "";
+  secondValue = "";
+  operation = "";
+}
