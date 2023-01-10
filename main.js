@@ -55,6 +55,33 @@ function manageNumbers(num) {
   }
 }
 
+function manageOperators(op) {
+  if (
+    currentDisplay.textContent === `That's a NO NO!` ||
+    currentDisplay.textContent === Infinity
+  ) {
+    clear();
+  } else if (result && operation && secondValue) {
+    calculate(result, operation, secondValue);
+    currentDisplay.textContent = result + op;
+    operation = op;
+  } else if (firstValue && operation && secondValue) {
+    calculate(firstValue, operation, secondValue);
+    currentDisplay.textContent = result + "" + op;
+    operation = op;
+  } else if (firstValue === "" && result === "") {
+    return false;
+  } else {
+    if (firstValue) {
+      operation = op;
+      currentDisplay.textContent = firstValue + "" + op;
+    } else {
+      currentDisplay.textContent = result + "" + op;
+      operation = op;
+    }
+  }
+}
+
 //rounding number to 3 decimals
 function roundNum(calculation) {
   return Math.round(calculation * 1000) / 1000;
