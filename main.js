@@ -89,6 +89,16 @@ function manageOperators(op) {
   }
 }
 
+function manageEqual() {
+  if (secondValue === "") {
+    return false;
+  } else if (result === "") {
+    calculate(firstValue, operation, secondValue);
+  } else {
+    calculate(result, operation, secondValue);
+  }
+}
+
 //rounding number to 3 decimals
 function roundNum(calculation) {
   return Math.round(calculation * 1000) / 1000;
@@ -151,5 +161,7 @@ function calculate(a, operator, b) {
     } else {
       divide(a, b);
     }
+  } else if (operator === "=") {
+    manageEqual();
   }
 }
