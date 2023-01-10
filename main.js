@@ -29,6 +29,7 @@ operators.forEach((btn) => {
 equal.addEventListener("click", manageEqual);
 clearAll.addEventListener("click", clear);
 decimalPoint.addEventListener("click", addDecimal);
+deleteBtn.addEventListener("click", deleteLast);
 
 //
 function manageNumbers(num) {
@@ -129,6 +130,21 @@ function addDecimal() {
   } else if (result && operation && secondValue === "") {
     secondValue = "0.";
     currentDisplay.textContent = secondValue;
+  }
+}
+
+function deleteLast() {
+  if (firstValue && operation === "") {
+    let sliced = firstValue.slice(0, -1);
+    firstValue = sliced;
+    currentDisplay.textContent = firstValue;
+  } else if (firstValue && operation && secondValue === "") {
+    operation = "";
+    currentDisplay.textContent = firstValue;
+  } else if (operation && secondValue) {
+    let sliced = firstValue.slice(0, -1);
+    firstValue = sliced;
+    currentDisplay.textContent = firstValue;
   }
 }
 
