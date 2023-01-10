@@ -27,6 +27,7 @@ operators.forEach((btn) => {
 });
 
 equal.addEventListener("click", manageEqual);
+clearAll.addEventListener("click", clear);
 
 //
 function manageNumbers(num) {
@@ -97,6 +98,14 @@ function manageEqual() {
   } else {
     calculate(result, operation, secondValue);
   }
+}
+
+function clear() {
+  firstValue = "";
+  secondValue = "";
+  operation = "";
+  result = "";
+  currentDisplay.textContent = displayValue;
 }
 
 //rounding number to 3 decimals
