@@ -30,6 +30,11 @@ operators.forEach((btn) => {
 function manageNumbers(num) {
   if (result && operation === "") {
     return false;
+  } else if (
+    (result === `That's a NO NO!` || result === Infinity) &&
+    operation
+  ) {
+    clear();
   } else if (operation === "" && firstValue === "0") {
     firstValue = num;
     currentDisplay.textContent = firstValue;
