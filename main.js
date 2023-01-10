@@ -26,6 +26,8 @@ operators.forEach((btn) => {
   });
 });
 
+equal.addEventListener("click", manageEqual);
+
 //
 function manageNumbers(num) {
   if (result && operation === "") {
