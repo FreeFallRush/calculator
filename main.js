@@ -244,5 +244,7 @@ document.addEventListener("keydown", function (e) {
     addDecimal(e.key);
   } else if (e.key === "Backspace") {
     deleteLast(e.key);
+  } else if (e.key === "Enter") {
+    manageEqual(e.key);
   }
 });
