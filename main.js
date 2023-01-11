@@ -214,3 +214,11 @@ function calculate(a, operator, b) {
     manageEqual();
   }
 }
+
+//keyboard support
+const operatorsConvertor = {
+  "/": "÷",
+  "*": "x",
+  "+": "+",
+  "-": "=",
+};
