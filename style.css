@@ -110,9 +110,9 @@ button.operator {
     display: grid;
     justify-content: center;
     align-content: center;
-    grid-template-columns: repeat(4, 60px);
-    grid-template-rows: minmax(60px, auto) repeat(5, 60px);
-    box-shadow: 10px 10px 5px #bebebe;
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: minmax(80px, auto) repeat(5, 80px);
+    box-shadow: 20px 20px 40px #bebebe;
   }
 
   .display {
