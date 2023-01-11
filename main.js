@@ -240,5 +240,7 @@ document.addEventListener("keydown", function (e) {
     manageNumbers(e.key);
   } else if (e.key in operatorsConvertor) {
     manageOperators(operatorsConvertor[e.key]);
+  } else if (e.key === ".") {
+    addDecimal(e.key);
   }
 });
