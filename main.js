@@ -220,7 +220,7 @@ const operatorsConvertor = {
   "/": "÷",
   "*": "x",
   "+": "+",
-  "-": "=",
+  "-": "-",
 };
 
 document.addEventListener("keydown", function (e) {
