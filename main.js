@@ -242,5 +242,7 @@ document.addEventListener("keydown", function (e) {
     manageOperators(operatorsConvertor[e.key]);
   } else if (e.key === ".") {
     addDecimal(e.key);
+  } else if (e.key === "Backspace") {
+    deleteLast(e.key);
   }
 });
