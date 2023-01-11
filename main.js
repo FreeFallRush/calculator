@@ -246,5 +246,7 @@ document.addEventListener("keydown", function (e) {
     deleteLast(e.key);
   } else if (e.key === "Enter") {
     manageEqual(e.key);
+  } else if (e.key === "Delete") {
+    clear();
   }
 });
