@@ -72,11 +72,11 @@ function manageOperators(op) {
   ) {
     clear();
   } else if (result && operation && secondValue) {
-    calculate(result, operation, secondValue);
+    operate(result, operation, secondValue);
     currentDisplay.textContent = result + op;
     operation = op;
   } else if (firstValue && operation && secondValue) {
-    calculate(firstValue, operation, secondValue);
+    operate(firstValue, operation, secondValue);
     currentDisplay.textContent = result + "" + op;
     operation = op;
   } else if (firstValue === "" && result === "") {
@@ -96,9 +96,9 @@ function manageEqual() {
   if (secondValue === "") {
     return false;
   } else if (result === "") {
-    calculate(firstValue, operation, secondValue);
+    operate(firstValue, operation, secondValue);
   } else {
-    calculate(result, operation, secondValue);
+    operate(result, operation, secondValue);
   }
 }
 
@@ -196,7 +196,7 @@ function divide(a, b) {
   }
 }
 
-function calculate(a, operator, b) {
+function operate(a, operator, b) {
   if (operator === "+") {
     add(a, b);
   } else if (operator === "-") {
